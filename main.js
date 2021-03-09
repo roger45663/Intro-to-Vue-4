@@ -13,10 +13,12 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        addToCard() {
+        addToCart() {
             this.cart += 1;
         },
-        decreaseToCard() {
+        removeFromCart() {
+            if(this.cart === 0) return;
+
             this.cart -= 1;
         },
         updateImg(imgPath) {
