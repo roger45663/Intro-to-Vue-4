@@ -9,8 +9,9 @@ const app = Vue.createApp({
         updateCart(id) {
             this.cart.push(id)
         },
-        reduceCart(id) {
+        reduceById(id) {
             const productIdx = this.cart.indexOf(id);
+            if(productIdx === -1) return;
             this.cart.splice(productIdx, 1);
         }
     }

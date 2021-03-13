@@ -14,7 +14,7 @@
 
       <div class="cart">Cart({{ cart.length }})</div>
       
-      <product-display :premium="premium" @add-to-cart="updateCart" @remove-from-cart="reduceCart"></product-display>
+      <product-display :premium="premium" @add-to-cart="updateCart" @remove-from-cart="reduceById"></product-display>
       
     </div>
 
